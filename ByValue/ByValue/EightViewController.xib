@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EightViewController">
+            <connections>
+                <outlet property="DMTextField" destination="XTc-xg-VwB" id="VX9-4X-qhf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czZ-GV-2cm">
+                    <rect key="frame" x="250" y="275" width="100" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3zy-Qx-QtL"/>
+                        <constraint firstAttribute="width" constant="100" id="w2O-EL-ycv"/>
+                    </constraints>
+                    <state key="normal" title="点击"/>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="Kmy-Hd-9iF"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Block传值,好难哦" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XTc-xg-VwB">
+                    <rect key="frame" x="200" y="205" width="200" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Sv3-DM-Xgq"/>
+                        <constraint firstAttribute="height" constant="50" id="XPa-Yw-hpQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XTc-xg-VwB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0jK-hl-1Rj"/>
+                <constraint firstItem="czZ-GV-2cm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6X5-pe-eMk"/>
+                <constraint firstItem="czZ-GV-2cm" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ZS8-lT-H0v"/>
+                <constraint firstItem="czZ-GV-2cm" firstAttribute="top" secondItem="XTc-xg-VwB" secondAttribute="bottom" constant="20" id="t9h-HQ-nN0"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
